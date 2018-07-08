@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Relax</string>
+
+    <string name="song_cover">Song cover</string>
+
+    <string name="pause">Pause</string>
+    <string name="fast_rewind">Fast rewind</string>
+    <string name="fast_forward">Fast forward</string>
+    <string name="skip_previous">Skip previous</string>
+    <string name="skip_next">Skip next</string>
+
+    <string name="artist_album">%1$s - %2$s</string>
+    <string name="elapsed_time_zero">00:00</string>
+</resources>

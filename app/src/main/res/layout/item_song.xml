@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/songItemPaddingBottom"
+    android:paddingTop="@dimen/songItemPaddingTop">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_song_cover"
+        android:layout_width="@dimen/songItemCoverWidth"
+        android:layout_height="@dimen/songItemCoverHeight"
+        android:layout_marginEnd="@dimen/songItemMarginEnd"
+        android:layout_marginLeft="@dimen/songItemMarginStart"
+        android:layout_marginRight="@dimen/songItemMarginEnd"
+        android:layout_marginStart="@dimen/songItemMarginStart"
+        android:contentDescription="@string/song_cover"
+        tools:src="@drawable/placeholder" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/songItemMetaPadding">
+
+        <TextView
+            android:id="@+id/item_song_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/songItemNameTextSize"
+            android:textStyle="bold"
+            tools:text="Feel invincible"
+            tools:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/item_song_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/songItemArtistTextSize"
+            tools:text="Skillet"
+            tools:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_song_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/songItemDurationMargin"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/songItemDurationTextSize"
+        tools:text="04:30"
+        tools:textColor="@android:color/black" />
+
+</LinearLayout>
