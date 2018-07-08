@@ -3,9 +3,9 @@ package inc.ahmedmourad.relax.view;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -76,6 +76,10 @@ public class PlayerActivity extends AppCompatActivity {
 	@BindView(R.id.player_next)
 	ImageButton nextControl;
 
+	@SuppressWarnings("WeakerAccess")
+	@BindView(R.id.player_up)
+	ImageButton upButton;
+
 	private List<Parcelable> songsList;
 
 	private int songPosition;
@@ -142,6 +146,8 @@ public class PlayerActivity extends AppCompatActivity {
 			song = Parcels.unwrap(songsList.get(songPosition));
 			populateUi();
 		});
+
+		upButton.setOnClickListener(v -> finish());
 
 		if (savedInstanceState != null) {
 			songPosition = savedInstanceState.getInt(STATE_SONG_POSITION);

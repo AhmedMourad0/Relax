@@ -96,6 +96,7 @@ public class SongsRecyclerAdapter extends RecyclerView.Adapter<SongsRecyclerAdap
 				final Intent intent = new Intent(context, PlayerActivity.class);
 				intent.putParcelableArrayListExtra(PlayerActivity.EXTRA_SONGS, list);
 				intent.putExtra(PlayerActivity.EXTRA_SONG_POSITION, position);
+				intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 				context.startActivity(intent);
 			});
 		}

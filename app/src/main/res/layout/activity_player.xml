@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
+    tools:context=".view.PlayerActivity"
     tools:ignore="Overdraw">
 
     <!-- I've had this thing for so long, waiting
@@ -26,39 +27,69 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
-        android:orientation="vertical"
-        tools:context=".view.PlayerActivity">
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/player_song"
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/playerSongMarginBottom"
-            android:layout_marginEnd="@dimen/playerSongMarginEnd"
-            android:layout_marginLeft="@dimen/playerSongMarginStart"
-            android:layout_marginRight="@dimen/playerSongMarginEnd"
-            android:layout_marginStart="@dimen/playerSongMarginStart"
             android:layout_marginTop="@dimen/playerSongMarginTop"
-            android:ellipsize="end"
-            android:gravity="center"
-            android:maxLines="1"
-            android:scrollHorizontally="true"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/playerSongTextSize"
-            android:textStyle="bold"
-            tools:text="Feel invincible" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/player_artist_album"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:gravity="center"
-            android:maxLines="1"
-            android:scrollHorizontally="true"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/playerArtistAlbumTextSize"
-            tools:text="Skillet - Unleashed" />
+            <ImageButton
+                android:id="@+id/player_up"
+                android:layout_width="@dimen/playerUpButtonWidth"
+                android:layout_height="@dimen/playerUpButtonHeight"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/playerUpButtonMarginStart"
+                android:layout_marginStart="@dimen/playerUpButtonMarginStart"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/go_up"
+                android:paddingEnd="@dimen/playerUpButtonPaddingEnd"
+                android:paddingLeft="@dimen/playerUpButtonPaddingStart"
+                android:paddingRight="@dimen/playerUpButtonPaddingEnd"
+                android:paddingStart="@dimen/playerUpButtonPaddingStart"
+                app:srcCompat="@drawable/ic_arrow_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/playerSongMarginEnd"
+                android:layout_marginLeft="@dimen/playerSongMarginStart"
+                android:layout_marginRight="@dimen/playerSongMarginEnd"
+                android:layout_marginStart="@dimen/playerSongMarginStart"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/player_song"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/playerSongMarginBottom"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/playerSongTextSize"
+                    android:textStyle="bold"
+                    tools:text="Feel invincible" />
+
+                <TextView
+                    android:id="@+id/player_artist_album"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/playerArtistAlbumTextSize"
+                    tools:text="Skillet - Unleashed" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/player_cover"

@@ -5,6 +5,9 @@
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:orientation="horizontal"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
     android:paddingBottom="@dimen/songItemPaddingBottom"
     android:paddingTop="@dimen/songItemPaddingTop">
 

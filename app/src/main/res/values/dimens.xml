@@ -1,36 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <dimen name="dividerHeight">1dp</dimen>
+
     <dimen name="recyclerPaddingBottom">8dp</dimen>
     <dimen name="recyclerPaddingTop">8dp</dimen>
+
     <dimen name="songItemPaddingTop">4dp</dimen>
     <dimen name="songItemPaddingBottom">4dp</dimen>
+
     <dimen name="songItemCoverWidth">40dp</dimen>
     <dimen name="songItemCoverHeight">40dp</dimen>
+
     <dimen name="songItemMarginEnd">4dp</dimen>
     <dimen name="songItemMarginStart">16dp</dimen>
+
     <dimen name="songItemMetaPadding">8dp</dimen>
+
     <dimen name="songItemNameTextSize">16sp</dimen>
     <dimen name="songItemArtistTextSize">14sp</dimen>
+
     <dimen name="songItemDurationMargin">16dp</dimen>
     <dimen name="songItemDurationTextSize">14sp</dimen>
+
     <dimen name="particlesLineDistance">86dp</dimen>
     <dimen name="particlesLineThickness">1dp</dimen>
     <dimen name="particlesMaxDotRadius">3dp</dimen>
     <dimen name="particlesMinDotRadius">1dp</dimen>
-    <dimen name="playerSongMarginEnd">8dp</dimen>
+
+    <dimen name="playerSongMarginEnd">48dp</dimen>
     <dimen name="playerSongMarginBottom">4dp</dimen>
-    <dimen name="playerSongMarginStart">8dp</dimen>
+    <dimen name="playerSongMarginStart">48dp</dimen>
     <dimen name="playerSongMarginTop">36dp</dimen>
     <dimen name="playerSongTextSize">16sp</dimen>
+
     <dimen name="playerArtistAlbumTextSize">14sp</dimen>
+
     <dimen name="playerCoverMarginTop">16dp</dimen>
     <dimen name="playerCoverMarginBottom">16dp</dimen>
     <dimen name="playerCoverWidth">150dp</dimen>
+
     <dimen name="playerTimeContainerMarginBottom">32dp</dimen>
     <dimen name="playerTimeContainerMarginEnd">8dp</dimen>
     <dimen name="playerTimeContainerMarginStart">8dp</dimen>
+
     <dimen name="playerElapsedTimeTextSize">14sp</dimen>
     <dimen name="playerDurationTextSize">14sp</dimen>
     <dimen name="playerControlsPaddingBottom">50dp</dimen>
+
+    <dimen name="playerUpButtonMarginStart">16dp</dimen>
+    <dimen name="playerUpButtonHeight">20dp</dimen>
+    <dimen name="playerUpButtonWidth">20dp</dimen>
+    <dimen name="playerUpButtonPaddingStart">8dp</dimen>
+    <dimen name="playerUpButtonPaddingEnd">8dp</dimen>
+
 </resources>
