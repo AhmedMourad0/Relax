@@ -1,7 +1,11 @@
 # Relax
 
 ## Project Overview
-This's a project for the Android Basics Nanodegree Program.
+A music player.
+
+## Key Concepts
+- ContentProvider
+- ButterKnife, Parceler
 
 ## Screenshots
 
